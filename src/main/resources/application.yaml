@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /cookingapp
+
+spring:
+  application:
+    name: cookingapp
+  datasource:
+    url: "jdbc:mysql://localhost:3306/cooking_app?useUnicode=true&characterEncoding=UTF-8"
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+jwt:
+  signerKey: "1TjXchw5FloESb63Kc+DFhTARvpWL4jUGCwfGWxuG5SIf/1y/LgJxHnMqaF6A/ij"
